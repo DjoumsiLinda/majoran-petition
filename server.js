@@ -92,9 +92,8 @@ if (require.main === module) {
     server.listen(process.env.PORT || 4900, () => {
         console.log("listening on http://localhost:4900");
     });
-}
+
 module.exports = server;
 
 //https://dashboard.heroku.com/apps/einfuegen/settings
-//https://einfuegen.herokuapp.com/register
-// git remote add heroku https://git.heroku.com/einfuegen.git
+// git remote add heroku https://git.heroku.com/einfuegenprojects.git
