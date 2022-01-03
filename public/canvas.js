@@ -1,10 +1,9 @@
-(function () {
+module.exports.canvas = (function () {
     // client-side JavaScript.
     // canvas logic goes here (mouse event listeners)...
 
     const canvas = document.getElementById("canvas");
     const inputField = $(".petition .imageCanvas input");
-    console.log($, canvas);
     let ctx = canvas.getContext("2d");
     let checkDraw = false;
     let x = 0;
