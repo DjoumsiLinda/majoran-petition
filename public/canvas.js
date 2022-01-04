@@ -1,4 +1,4 @@
-module.exports.canvas = (function () {
+(function () {
     // client-side JavaScript.
     // canvas logic goes here (mouse event listeners)...
 
