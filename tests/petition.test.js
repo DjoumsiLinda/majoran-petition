@@ -34,9 +34,9 @@ test("Test Post", () => {
     cookieSession.mockSession({
         userId: 123,
     });
-    db.addSignatures.mockResolvedValueOnce({
-        userId: 123,
-        signature: "123",
+
+    db.addSignatures.mockResolvedValue({
+        rows: [{ id: "dd" }],
     });
 
     return supertest(app)

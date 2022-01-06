@@ -32,6 +32,7 @@ router.post("/petition", requireUserLoggedIn, (request, response) => {
     const { signature } = request.body;
     db.addSignatures(signature, request.session.userId)
         .then((result) => {
+            console.log(result);
             request.session.signatureId = result.rows[0].id;
             response.redirect("/thanks");
         })
