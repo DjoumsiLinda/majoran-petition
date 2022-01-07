@@ -6,6 +6,10 @@
 #tocenter {
     margin-left: 45%;
 }
+#tocenter {
+    margin-top: -3px;
+    margin-bottom: -5px;
+}
 .deleteSignature #but {
     margin-top: 20px;
     display: flex;
