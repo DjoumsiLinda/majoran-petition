@@ -89,8 +89,8 @@ server.get("/", (request, response) => {
 });
 
 if (require.main === module) {
-    server.listen(process.env.PORT || 4900, () => {
-        console.log("listening on http://localhost:4900");
+    server.listen(process.env.PORT || 5000, () => {
+        console.log("listening on http://localhost:5000");
     });
 }
 module.exports = server;

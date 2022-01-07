@@ -6,10 +6,13 @@
     margin-top: -30px;
     margin-left: 0%;
 }
-.profile #edit {
-    margin-top: -40px;
+.profile {
+    margin-left: 40%;
 }
-
+#pl {
+    margin-top: 50px;
+    margin-left: -60px;
+}
 .profile p {
     font-size: 30px;
     color: black;

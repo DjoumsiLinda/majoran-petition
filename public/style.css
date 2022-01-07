@@ -11,27 +11,20 @@ body {
     overflow: hidden;
     margin: 0;
 }
-#anfang {
+#anfang,
+#right {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
     margin-bottom: 0;
 }
+
 .login p {
     margin-left: 2%;
     font-size: 35px;
 }
-#right {
-    margin-top: 5%;
-    margin-left: -15%;
-}
 main {
     flex-grow: 1;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 p,
 button,
@@ -71,9 +64,12 @@ input {
     z-index: -1;
 }
 .petition {
-    margin-left: -40%;
+    margin-left: 12%;
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .petition canvas {
     background-color: rgb(255, 187, 0);
@@ -89,8 +85,9 @@ input {
     margin-top: -10px;
     margin-left: 50%;
 }
-.petition #right {
-    margin-left: 53%;
+.petition #submit {
+    margin-top: 5%;
+    margin-left: 40%;
 }
 #submit {
     cursor: pointer;
@@ -105,8 +102,8 @@ input {
 .part {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 3%;
+    justify-content: flex-start;
+    margin-left: 12%;
 }
 
 .er {
@@ -127,4 +124,69 @@ footer {
     position: relative;
     top: 12px;
     left: 7px;
+}
+header {
+    padding: 30px;
+    background-color: rgb(255, 187, 0);
+    position: relative;
+}
+.hamburgermenu {
+    height: 40px;
+    width: 35px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Hambuger menu*/
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    visibility: hidden;
+    transition: all 2s;
+}
+
+#overlay.on {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#menu {
+    background-color: rgb(255, 187, 0);
+    height: 100%;
+    width: 50%;
+    min-width: 150px;
+    max-width: 350px;
+    position: absolute;
+    right: 0;
+    transition: all 2s;
+    transform: translateX(100%);
+}
+
+.btnX {
+    margin-top: -5px;
+    position: absolute;
+    left: 90%;
+    font-size: 30px;
+    background-color: rgb(255, 187, 0);
+    border: 0px;
+    color: blue;
+}
+#menu a {
+    display: block;
+    text-decoration: dotted red;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    padding: 10px 20px;
+}
+.navi {
+    margin-top: 20px;
+}
+#overlay.on #menu {
+    transform: translateX(0);
 }

@@ -2,26 +2,50 @@
     <link rel="stylesheet" href="../public/signers.css" />
 </head>
 <img class="bild1" src="../public/assets/bild2.png" />
+<header>
+    <img class="hamburgermenu" src="../public/assets/menu.svg" />
+</header>
 <div id="contains">
     <div id="left">
         <p>There are {{count}} Signers in {{city}}</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Homepage</th>
+                </tr>
+            </thead>
+        </table>
         {{#each signers}}
-            <li>{{first}}
-                {{last}}
-                {{age}}
-                {{city}}
+            <table>
+                <tr>
+                    <td>{{first}}</td>
+                    <td>{{last}}</td>
+                    <td>{{age}}</td>
+                    <td><a href="/signers/{{city}}">{{city}}</a></td>
+                    <td>{{Homepage}}</td>
+                </tr>
+            </table>
         {{/each}}
 
     </div>
-    <div id="right">
-        <img id="menu" src="../public/assets/menu.svg" />
-        <div id="overlay">
-            <a href="/signers">See all {{count}} Signers</a>
-            <a href="/profile/edit">Edit your profile</a>
-            <a href="/petition/delete/signature">Delete your signature</a>
-            <a href="/petition/delete/account">Delete your account</a>
-        </div>
+    <div id="overlay">
+        <nav id="menu">
+            <button class="btnX">X</button>
+            <div class="navi">
+                <a href="/thanks">Homepage</a>
+                <a href="/profile/edit">Edit your profile</a>
+                <a href="/petition/delete/signature">Delete your signature</a>
+                <a href="/petition/delete/account">Delete your account</a>
+                <a href="/petition/logout">Log out</a>
+            </div>
+        </nav>
+
     </div>
+
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../public/canvas.js"></script>
