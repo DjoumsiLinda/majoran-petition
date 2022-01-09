@@ -1,6 +1,15 @@
 <head>
-    <link rel="stylesheet" href="/public/profile.css" />
+    <link rel="stylesheet" href="../public/profile.css" />
 </head>
+<header>
+    <div id="header_left">
+        <a href=""><img class="logo" src="../public/assets/spiced.png" /></a>
+    </div>
+    <div id="header_right">
+        <a class="ce" href="">Language</a>
+        <img class="hamburgermenu" src="../public/assets/menu.svg" />
+    </div>
+</header>
 {{#if error}}
     <p id="err">Oups, something went wrong. Please try again!</p>
 {{/if}}
@@ -70,4 +79,18 @@
             <button type="submit" id="submit" name="back">Back</button>
         </div>
     </div>
+    <div id="overlay">
+        <nav id="menu">
+            <button class="btnX">X</button>
+            <div class="navi">
+                <a href="/thanks">Homepage</a>
+                <a href="/petition/delete/signature">Delete your signature</a>
+                <a href="/petition/delete/account">Delete your account</a>
+                <a href="/petition/logout">Log out</a>
+            </div>
+        </nav>
+    </div>
 </form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../public/canvas.js"></script>
+<script src="../public/menu.js"></script>

@@ -36,7 +36,7 @@ test("Test Post", () => {
     });
 
     db.addSignatures.mockResolvedValue({
-        rows: [{ id: "dd" }],
+        rows: [{ id: 12 }],
     });
 
     return supertest(app)

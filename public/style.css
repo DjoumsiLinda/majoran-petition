@@ -18,7 +18,6 @@ body {
     margin-top: 2%;
     margin-bottom: 0;
 }
-
 .login p {
     margin-left: 2%;
     font-size: 35px;
@@ -63,32 +62,6 @@ input {
     position: absolute;
     z-index: -1;
 }
-.petition {
-    margin-left: 12%;
-    margin-top: 1%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.petition canvas {
-    background-color: rgb(255, 187, 0);
-    border: 1px dashed white;
-    margin-top: 5%;
-    margin-bottom: 0;
-}
-.petition #signature p {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 0;
-    margin-top: -10px;
-    margin-left: 50%;
-}
-.petition #submit {
-    margin-top: 5%;
-    margin-left: 40%;
-}
 #submit {
     cursor: pointer;
     background-color: white;
@@ -105,7 +78,6 @@ input {
     justify-content: flex-start;
     margin-left: 12%;
 }
-
 .er {
     color: rgb(255, 0, 0);
     font-weight: bold;
@@ -114,30 +86,80 @@ input {
     margin-top: -30px;
     margin-left: 15%;
 }
-
 footer {
     background-color: rgb(255, 187, 0);
-    width: 100%;
-    height: 60px;
+    height: 15vh;
+    margin-top: 0px;
 }
 #footerText {
-    position: relative;
-    top: 12px;
-    left: 7px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    min-height: 15vh;
+    grid-gap: 5px;
+    padding-top: 20px;
+}
+#footer_left {
+    grid-column: 1 / 2;
+    grid-row: 1/-1;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#footer_center {
+    grid-column: 2 / 3;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+#footer_right {
+    margin-right: 5px;
+    grid-column: 3 / 4;
+    grid-row: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 header {
-    padding: 30px;
+    padding: 15px 0;
     background-color: rgb(255, 187, 0);
-    position: relative;
+    display: grid;
+    grid-column: 1fr, 1fr;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    /*position: relative;*/
+}
+.ce {
+    margin-top: 5px;
+}
+header a {
+    padding: 0 20px;
+    text-decoration: none;
+}
+#header_left {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#header_right {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.logo {
+    height: 30px;
 }
 .hamburgermenu {
-    height: 40px;
-    width: 35px;
-    position: absolute;
-    right: 40px;
-    top: 10px;
+    height: 30px;
+    padding: 0 20px;
 }
-
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Hambuger menu*/
 #overlay {
     position: fixed;
@@ -149,24 +171,21 @@ header {
     visibility: hidden;
     transition: all 2s;
 }
-
 #overlay.on {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 #menu {
     background-color: rgb(255, 187, 0);
     height: 100%;
     width: 50%;
     min-width: 150px;
-    max-width: 350px;
+    max-width: 315px;
     position: absolute;
     right: 0;
     transition: all 2s;
     transform: translateX(100%);
 }
-
 .btnX {
     margin-top: -5px;
     position: absolute;

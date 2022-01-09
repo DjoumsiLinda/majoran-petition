@@ -4,6 +4,9 @@
 
     const canvas = document.getElementById("canvas");
     const inputField = $(".petition .imageCanvas input");
+    if (!canvas) {
+        return;
+    }
     let ctx = canvas.getContext("2d");
     let checkDraw = false;
     let x = 0;

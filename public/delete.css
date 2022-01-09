@@ -44,6 +44,9 @@
 .contains .updateP {
     text-align: center;
 }
+body {
+    overflow-y: visible;
+}
 .contains .updateim {
     margin-top: 7%;
     margin-left: 70px;
@@ -75,4 +78,7 @@ canvas {
     border: 1px dashed white;
     margin-top: -10%;
     margin-bottom: 0;
+}
+footer {
+    margin-top: 0px;
 }
