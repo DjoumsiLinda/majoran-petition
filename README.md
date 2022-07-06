@@ -1,5 +1,5 @@
 # majoran-petition
-#Technologie
+# Technologie
 - bcryptjs
 - cookie-parser
 - cookie-session
